@@ -1,0 +1,2 @@
+# Emvironments (this file will ignore virtual environment file and not send it to github)
+venv/
