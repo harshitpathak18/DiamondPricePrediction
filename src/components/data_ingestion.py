@@ -21,7 +21,6 @@ class DataIngestion:
         logging.info('Data Ingestion method starts')
 
         try:
-            # df = pd.read_csv(os.path.join('notebooks/data', 'gemstone.csv'))
             df=pd.read_csv(r"notebooks\data\gemstone.csv")
             logging.info('Dataset read as pandas Dataframe')
 
@@ -44,4 +43,4 @@ class DataIngestion:
 
         except Exception as e:
             logging.error(f'Error occurred in Data Ingestion config: {e}')
-            # raise CustomException(e, sys)
+            raise CustomException(e, sys)
